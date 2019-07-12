@@ -1,6 +1,7 @@
-# Boxed
+# Boxed directive
 
 With 'boxed" directive you can simply wrap a dom element and apply classes to style it.
+is a div with id bar and classes 'foo hello'
 
 # Installation
 
@@ -14,6 +15,18 @@ imports: [
     NgBoxedModule
   ],
 ```
+
+## Emmet notation
+'boxed' supports an "emmet-style" way to describe the wrappers and their hierarchy.
+
+'div' is a div element
+'div.foo' is a div with class foo
+'div#bar' is a div with id bar
+'div#bar.foo" is a div with id bar and class foo
+'div#bar.foo.hello' 
+
+'div>div' is a div with another div as a child
+'div.a>div.b' is a div of class a with a div of class b as child
 
 ## Basic usage - single box 
 
