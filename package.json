@@ -1,6 +1,12 @@
 {
   "name": "ng-boxed",
-  "version": "0.0.1",
+  "version": "0.0.4",
+  "keywords": ["angular","boxed","layout","dom","bootstrap","ancestors"],
+  "author": {"name": "Massimo", "surname": "Nicolardi"},
+  "repository": {
+      "type": "git",
+      "url": "git@github.com:nicolardi/ng-boxed.git"
+    },
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0"
