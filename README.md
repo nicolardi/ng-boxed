@@ -1,6 +1,7 @@
 # Boxed directive
 
 The 'boxed" is an Angular directive which provides an easy way to wrap a DOM element and apply classes to style it.
+[DEMO](https://stackblitz.com/edit/angular-tis4gd)
 
 # Installation
 
