@@ -1,24 +1,85 @@
-# NgBoxed
+# Boxed
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+With 'boxed" directive you can simply wrap a dom element and apply classes to style it.
 
-## Code scaffolding
+# Installation
 
-Run `ng generate component component-name --project ng-boxed` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-boxed`.
-> Note: Don't forget to add `--project ng-boxed` or else it will be added to the default project in your `angular.json` file. 
+npm install ng-boxed
 
-## Build
+And import the module in your app.module.ts  
 
-Run `ng build ng-boxed` to build the project. The build artifacts will be stored in the `dist/` directory.
+'''
+imports: [
+    .....,
+    NgBoxedModule
+  ],
+'''
 
-## Publishing
+## Basic usage - single box 
 
-After building your library with `ng build ng-boxed`, go to the dist folder `cd dist/ng-boxed` and run `npm publish`.
+'''
+<a class="foo" boxed="div">This is a link</a>
 
-## Running unit tests
+yields:
 
-Run `ng test ng-boxed` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<div>
+   <a class="foo">This is a link</a>
+</div>
+'''
 
-## Further help
+## Multiple boxes
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+'''
+<a class="foo" boxed="div>div">This is a link</a>
+
+yields
+
+<div>
+   <div>
+       <a class="foo">This is a link</a>
+   </div>
+</div>
+'''
+
+## Styled boxes
+
+'''
+<a class="foo" boxed="div.hello>div.all">This is a link</a>
+
+yields
+
+<div class="hello">
+   <div class="world">
+       <a class="foo">This is a link</a>
+   </div>
+</div>
+'''
+
+## More advanced usage
+
+'''
+<a class="foo" boxed="div#the_id.hello.world>div.first.second">This is a link</a>
+
+yields
+
+<div class="hello world" id="the_id">
+   <div class="first second">
+       <a class="foo">This is a link</a>
+   </div>
+</div>
+'''
+
+## Default value
+
+You can use boxed without any parameter. In this case it wraps the element in a div.col-12 (bootstrap-like)
+
+'''
+<div boxed>This is a text</div>
+
+yields
+
+<div class="col-12">
+   <div class="first second">This is a text</div>
+</div>
+'''
+
