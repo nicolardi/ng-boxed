@@ -1,7 +1,6 @@
 # Boxed directive
 
-With 'boxed" directive you can simply wrap a dom element and apply classes to style it.
-is a div with id bar and classes 'foo hello'
+The 'boxed" is an Angular directive which provides an easy way to wrap a DOM element and apply classes to style it.
 
 # Installation
 
