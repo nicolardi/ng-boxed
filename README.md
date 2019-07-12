@@ -17,7 +17,7 @@ imports: [
 
 ## Emmet notation
 'boxed' supports an "emmet-style" way to describe the wrappers and their hierarchy.
-
+```
 'div' is a div element
 'div.foo' is a div with class foo
 'div#bar' is a div with id bar
@@ -26,6 +26,7 @@ imports: [
 
 'div>div' is a div with another div as a child
 'div.a>div.b' is a div of class a with a div of class b as child
+```
 
 ## Basic usage - single box 
 
